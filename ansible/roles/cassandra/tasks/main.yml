@@ -19,6 +19,7 @@
   apt_key:
     url: "{{ cassandra_repo_key }}"
     state: "present"
+    validate_certs: no
 
 - name: debian | Adding Cassandra Debian Repo
   apt_repository:
